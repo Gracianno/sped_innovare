@@ -1363,7 +1363,7 @@ class Danfe extends Common
             } else {
                 $xMotivo = '';
             }
-            $texto = "SEM VALOR FISCAL\n".$xMotivo;
+           
             $aFont = array('font'=>$this->fontePadrao, 'size'=>48, 'style'=>'B');
             $this->pTextBox($x, $y, $w, $h, $texto, $aFont, 'C', 'C', 0, '');
             $this->pdf->SetTextColor(0, 0, 0);
@@ -1379,7 +1379,7 @@ class Danfe extends Common
             $h = 5;
             $w = $maxW-(2*$x);
             $this->pdf->SetTextColor(90, 90, 90);
-            $texto = "SEM VALOR FISCAL";
+            
             $aFont = array('font'=>$this->fontePadrao, 'size'=>48, 'style'=>'B');
             $this->pTextBox($x, $y, $w, $h, $texto, $aFont, 'C', 'C', 0, '');
             $aFont = array('font'=>$this->fontePadrao, 'size'=>30, 'style'=>'B');
