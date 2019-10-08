@@ -1408,14 +1408,10 @@ class Danfe extends Common
             } else {
                 if (!isset($this->nfeProc)) {
                     if (!$this->pNotaDPEC()) {
-                        $texto = "SEM VALOR FISCAL";
                         $aFont = array('font'=>$this->fontePadrao, 'size'=>48, 'style'=>'B');
-                        $this->pTextBox($x, $y, $w, $h, $texto, $aFont, 'C', 'C', 0, '');
                     }
                     $aFont = array('font'=>$this->fontePadrao, 'size'=>30, 'style'=>'B');
-                    $texto = "FALTA PROTOCOLO DE APROVAÇÃO DA SEFAZ";
                     if (!$this->pNotaDPEC()) {
-                        $this->pTextBox($x, $y+12, $w, $h, $texto, $aFont, 'C', 'C', 0, '');
                     } else {
                         $this->pTextBox($x, $y+25, $w, $h, $texto, $aFont, 'C', 'C', 0, '');
                     }
